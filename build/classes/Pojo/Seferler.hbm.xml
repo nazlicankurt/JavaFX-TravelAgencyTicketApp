@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09.May.2019 23:13:27 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Seferler" table="seferler" catalog="nazlican" optimistic-lock="version">
+        <id name="seferId" type="java.lang.Integer">
+            <column name="sefer_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="musteri" class="Pojo.Musteri" fetch="select">
+            <column name="musteri_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="turlar" class="Pojo.Turlar" fetch="select">
+            <column name="tur_id" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

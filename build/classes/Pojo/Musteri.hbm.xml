@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09.May.2019 23:00:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Musteri" table="musteri" catalog="nazlican" optimistic-lock="version">
+        <id name="musteriId" type="int">
+            <column name="musteri_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="ad" type="string">
+            <column name="ad" length="111" not-null="true" />
+        </property>
+        <property name="soyad" type="string">
+            <column name="soyad" length="111" not-null="true" />
+        </property>
+        <property name="telno" type="long">
+            <column name="telno" not-null="true" />
+        </property>
+        <property name="cinsiyet" type="string">
+            <column name="cinsiyet" length="65535" not-null="true" />
+        </property>
+        <property name="tc" type="long">
+            <column name="tc" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

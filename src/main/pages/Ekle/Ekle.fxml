@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="616.0" style="-fx-background-color: #00000080;" type="StackPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="20.0" style="-fx-background-color: #FFF; -fx-background-radius: 5;">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <effect>
+            <DropShadow color="#0000005c" />
+         </effect>
+         <children>
+            <Label text="Müşteri Ekle" VBox.vgrow="ALWAYS" />
+            <Separator prefWidth="200.0" />
+            <HBox spacing="20.0">
+               <children>
+                  <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Adı" />
+                        <TextField fx:id="adi" prefHeight="36.0" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Soyadı" />
+                        <TextField fx:id="soyadi" prefHeight="36.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Telefon Numarası" />
+                        <TextField fx:id="tel" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Cinsiyet" />
+                  <TextField fx:id="cins" prefHeight="36.0" />
+               </children>
+            </VBox>
+            <HBox spacing="20.0">
+               <children>
+                  <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="TC" />
+                        <TextField fx:id="tc" prefHeight="36.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="20.0">
+               <children>
+                  <Button fx:id="saveButton" minHeight="36.0" minWidth="100.0" mnemonicParsing="false" onAction="#kaydet" style="-fx-background-color: #34495ef1 #34495e;" text="Kaydet" textFill="WHITE" />
+                  <Button minHeight="36.0" minWidth="100.0" mnemonicParsing="false" onAction="#iptal" style="-fx-background-color: #34495ef1 #34495e;" text="İptal" textFill="#fcf8f8" />
+               </children>
+            </HBox>
+            <Label fx:id="message" maxWidth="1.7976931348623157E308" textFill="#ff0606" />
+         </children>
+      </VBox>
+   </children>
+</fx:root>

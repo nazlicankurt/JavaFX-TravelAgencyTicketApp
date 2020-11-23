@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.May.2019, 20:12:20
+    Author     : HP
+*/
+
+.back {
+    -fx-background-image: url(../Image/Background/sunrise-1014711_1920.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.scroll-pane{
+    -fx-background-color : transparent;
+}
+.scroll-pane .viewport{
+    -fx-background-color : transparent;
+}
+.scroll-pane .scroll-bar{
+    -fx-background-color: #FFFFFF;
+}
+.scroll-pane .scroll-bar .track{
+    -fx-background-color: transparent;
+}
+ .scroll-pane .scroll-bar .thumb{
+    -fx-background-color: #bdc3c770;
+    -fx-background-insets: 5;
+}
+
+.scroll-pane .scroll-bar .decrement-button .decrement-arrow{
+    visibility:false;
+}
+
+.scroll-pane .scroll-bar .increment-button .increment-arrow{
+    visibility:false;
+}

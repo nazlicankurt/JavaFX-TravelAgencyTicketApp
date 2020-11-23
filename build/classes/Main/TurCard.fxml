@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root spacing="20.0" style="-fx-border-color: #CCCCCC80; -fx-border-width: 0 0 1 0; -fx-border-style: dashed;" type="HBox" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+   <children>
+      <Label fx:id="tur" maxWidth="1.7976931348623157E308" text="Tur Adı" HBox.hgrow="ALWAYS" />
+      <Label fx:id="nerden" minWidth="120.0" text="Nereden" />
+      <Label fx:id="nereye" minWidth="120.0" text="Nereye" />
+      <Label fx:id="fiyat" alignment="CENTER" minWidth="80.0" text="Fiyat" />
+      <Label fx:id="gun" alignment="CENTER" minWidth="40.0" text="Gün" />
+      <Label fx:id="gece" alignment="CENTER" minWidth="40.0" text="Gece" />
+   </children>
+</fx:root>

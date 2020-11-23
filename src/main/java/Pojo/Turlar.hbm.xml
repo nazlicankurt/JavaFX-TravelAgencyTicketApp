@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09.May.2019 23:00:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.Turlar" table="turlar" catalog="nazlican" optimistic-lock="version">
+        <id name="turId" type="java.lang.Integer">
+            <column name="tur_id" />
+            <generator class="identity" />
+        </id>
+        <property name="tadi" type="string">
+            <column name="tadi" length="111" not-null="true" />
+        </property>
+        <property name="fiyat" type="int">
+            <column name="fiyat" not-null="true" />
+        </property>
+        <property name="kacgun" type="string">
+            <column name="kacgun" length="111" not-null="true" />
+        </property>
+        <property name="kacgece" type="string">
+            <column name="kacgece" length="111" not-null="true" />
+        </property>
+        <property name="nereden" type="string">
+            <column name="nereden" length="111" not-null="true" />
+        </property>
+        <property name="nereye" type="string">
+            <column name="nereye" length="111" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
